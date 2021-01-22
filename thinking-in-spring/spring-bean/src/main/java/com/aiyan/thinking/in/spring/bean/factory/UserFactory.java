@@ -16,4 +16,14 @@ public interface UserFactory {
     default User createUser() {
         return User.createUser();
     }
+
+    /**
+     * 初始化 UserFactory
+     */
+    void initUserFactory();
+
+    /**
+     * UserFactory 销毁前执行逻辑
+     */
+    void doDestroy();
 }
