@@ -25,7 +25,7 @@ public class SingletonBeanRegistrationDemo {
         applicationContext.getBeansOfType(UserFactory.class);
 
         UserFactory userFactoryByLookUp = applicationContext.getBean("userFactory", UserFactory.class);
-        System.out.println("userFactory == useruserFactoryByLookUp:" + (userFactoryByLookUp == defaultUserFactory));
+        System.out.println("userFactory == userFactoryByLookUp:" + (userFactoryByLookUp == defaultUserFactory));
 
         applicationContext.close();
     }
